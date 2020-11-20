@@ -41,6 +41,7 @@ body {
     margin: auto;
     color: #ca4d24;
     max-width: 100%;
+    border-bottom: 2px solid #ca4d24;
 }
 
 .selector {
@@ -57,11 +58,16 @@ body {
 .list a {
     color: #ca4d24;
     text-decoration: none;
+    transition: transform .2s;
 }
 .list:hover {
+    color: black;
     border-bottom: 2px solid #ca4d24;
-    
-    
+    transform: scale(1.25);
+}
+
+.list a:hover {
+    color: black;
 }
 
 @media screen and (min-width: 700px) {
