@@ -54,6 +54,16 @@ body {
     font-weight: 900;
 } 
 
+.list a {
+    color: #ca4d24;
+    text-decoration: none;
+}
+.list:hover {
+    border-bottom: 2px solid #ca4d24;
+    
+    
+}
+
 @media screen and (min-width: 700px) {
     /* Versão Desktop */
     #menuImg {
