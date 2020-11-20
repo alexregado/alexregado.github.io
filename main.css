@@ -70,6 +70,15 @@ body {
     color: black;
 }
 
+/* Footer */ 
+footer {
+    background-color: #666666;
+}
+
+.footerimg {
+    width: 180px;
+}
+
 @media screen and (min-width: 700px) {
     /* Versão Desktop */
     #menuImg {
