@@ -84,15 +84,35 @@ footer {
     background-color: #666666;
     position: absolute;
     bottom: 0px;
-    width: 100%;
+    width: 99.5%;
     min-height: 95px;
 }
 
-.footerimg {
-    width: 180px;
+.footerflex{
+    display: flex;
+    justify-content: space-between;
 }
 
+.linkIscap {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.footerimg {
+    width: 120px;
+}
 
+.footerflex a {
+    text-decoration: none;
+}
+
+.footerflex p {
+    color: white;
+    margin-top: 0;
+}
+
+.footerflex a:visited {
+    color: white;
+}
 /* Página Sobre o mestrado */
 .flex1 {
     display: flex;
@@ -194,4 +214,8 @@ footer {
         text-align: center;
     }
     
+    .footer{
+        position: absolute;
+        bottom: initial;
+    }
 }
