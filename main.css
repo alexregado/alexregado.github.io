@@ -50,6 +50,7 @@ main {
     color: #ca4d24;
     max-width: 100%;
     margin-top: 50px;
+    margin-bottom: 53px;
     border-bottom: 2px solid #ca4d24;
 }
 
@@ -98,7 +99,7 @@ footer {
     margin-bottom: 10px;
 }
 .footerimg {
-    width: 120px;
+    width: 167px;
 }
 
 .footerflex a {
@@ -113,6 +114,20 @@ footer {
 .footerflex a:visited {
     color: white;
 }
+
+.fbLogo, .liLogo, .igLogo{
+    // background-color: white;
+    border-radius: 42px;
+    width: 46px;
+    max-width: 46px;
+}
+
+
+
+
+
+
+
 /* Página Sobre o mestrado */
 .flex1 {
     display: flex;
