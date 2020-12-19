@@ -1,3 +1,21 @@
+// Menu Expand 
+const menu = document.querySelector('#menu_icon');
+const menuList = document.querySelector('.selector');
+
+menu.addEventListener('click', () => {
+    if(menuList.style.display == 'none') {
+        menuList.style.display = 'block';
+    } else {
+        menuList.style.display = 'none';
+    }
+});
+
+
+
+
+
+
+
 // Página Sobre Nós
 const choose = document.querySelector('.choose');
 setTimeout(() => {
@@ -94,21 +112,3 @@ maisInfo.addEventListener('click', () => {
             
         }
 });
-
-
-
-
-
-
-// Menu Expand 
-const menu = document.querySelector('#menu_icon');
-const menuList = document.querySelector('.selector');
-
-menu.addEventListener('click', () => {
-    if(menuList.style.display == 'none') {
-        menuList.style.display = 'block';
-    } else {
-        menuList.style.display = 'none';
-    }
-});
-
