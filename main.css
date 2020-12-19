@@ -80,10 +80,10 @@ main {
 /* Footer */ 
 footer {
     background-color: #666666;
-    position: absolute;
     bottom: 0px;
     width: 99.5%;
     min-height: 95px;
+    margin-top: 30px;
 }
 
 .footerflex{
@@ -113,7 +113,6 @@ footer {
 }
 
 .fbLogo, .liLogo, .igLogo{
-    background-color: white;
     border-radius: 42px;
     width: 46px;
     max-width: 46px;
@@ -225,11 +224,11 @@ footer {
     }
 
     .intro { 
-        font-weight: 900;
-        width: 860px;
-        max-width: 100%;
-        text-align: center;
-        font-size: 14px;
+    font-weight: 900;
+    width: 860px;
+    max-width: 100%;
+    text-align: center;
+    font-size: 18px;
     }
     
     footer{
