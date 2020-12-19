@@ -40,6 +40,7 @@ main {
 .intro { 
     font-family: sans-serif;
     text-align: center;
+    font-size: 20px;
     font-weight: 900;
     width: 860px;
     margin: auto;
@@ -57,7 +58,7 @@ main {
     text-align: center;
     color: #ca4d24;
     font-family: 'open_sansbold', Verdana, sans-serif;
-    font-size: 19px;  
+    font-size: 18px;  
     font-weight: 900;
 } 
 
@@ -65,6 +66,8 @@ main {
     color: #ca4d24;
     text-decoration: none;
     transition: transform .2s;
+    padding: 12px;
+    text-align: center;
 }
 .list:hover {
     color: black;
@@ -196,13 +199,19 @@ footer {
 @media screen and (max-width: 750px) {
     #menu_icon {
     width: 65px;
-    position: fixed;
-    right: 0px;
+    position: absolute;
     top: 0px;
+    right: 0px;
+    }
+
+    .logoiscap{
+    width: auto;
+    max-width: 100% !important;
     }
 
     .selector {
     display: none;
+    text-align: right;
     color: #ca4d24;
     font-family: 'open_sansbold', Verdana, sans-serif;
     font-size: 17px;  
@@ -222,9 +231,36 @@ footer {
         width: 860px;
         max-width: 100%;
         text-align: center;
+        font-size: 14px;
     }
     
     footer{
         position: initial;
+        margin-top: 30px;
+        
+    }
+
+    .footerflex {
+        display: block;
+        text-align: center;
+    }
+
+
+
+
+
+
+    /* Página Sobre o Mestrado */
+    .pagemenu {
+        margin: auto;
+        margin-bottom: 48px;
+    }
+
+    .flex1{
+        display: initial;
+    }
+
+    .menu{
+        width: initial;
     }
 }
