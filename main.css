@@ -64,18 +64,24 @@ main {
     color: #ca4d24;
     text-decoration: none;
     transition: transform .2s;
-    padding: 12px;
+    margin: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     text-align: center;
 }
-.list:hover {
-    color: black;
-    border-bottom: 2px solid #ca4d24;
-    transform: scale(1.25);
+
+@media screen and (min-width: 750px) {
+    .list:hover {
+        color: black;
+        border-bottom: 2px solid #ca4d24;
+        transform: scale(1.25);
+    }
+    
+    .list a:hover {
+        color: black;
+    }
 }
 
-.list a:hover {
-    color: black;
-}
 
 /* Footer */ 
 footer {
@@ -214,6 +220,16 @@ footer {
     font-size: 17px;  
     font-weight: 900;
     z-index: 9999999;
+    }
+
+    .list {
+        transition: none;
+        transform: none;
+    }
+
+    a {
+        transition: none;
+        transform: none;
     }
 
     .introducao {
