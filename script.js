@@ -4,8 +4,14 @@ setTimeout(() => {
     choose.style.display = 'none';
 }, 5000);
 
+debugger
+
+
 const hist = document.querySelector('.historia');
 const text = document.querySelector('.textHist');
+
+debugger
+
 
 hist.addEventListener('click', () => {
         if(text.style.display == 'none') {
@@ -89,5 +95,4 @@ maisInfo.addEventListener('click', () => {
             
         }
 });
-
 
