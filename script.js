@@ -1,4 +1,9 @@
-// Menu Expand 
+// Página Sobre Nós
+const choose = document.querySelector('.choose');
+setTimeout(() => {
+    choose.style.display = 'none';
+}, 5000);
+
 const menu = document.querySelector('#menu_icon');
 const menuList = document.querySelector('.selector');
 
@@ -9,20 +14,6 @@ menu.addEventListener('click', () => {
         menuList.style.display = 'none';
     }
 });
-
-
-
-
-
-
-
-// Página Sobre Nós
-const choose = document.querySelector('.choose');
-setTimeout(() => {
-    choose.style.display = 'none';
-}, 5000);
-
-
 
 
 const hist = document.querySelector('.historia');

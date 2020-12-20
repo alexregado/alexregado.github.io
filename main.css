@@ -3,13 +3,9 @@ body {
    font-family: sans-serif !important; 
    font-weight: 300;
    margin: 0;
-   min-height: 100%;
 }
-/*
-main {
-    background-color: #f4f4f9;
-}
-*/
+
+
 .header {
     max-width: 1120px;
     margin: 0 auto;
@@ -80,6 +76,16 @@ main {
     .list a:hover {
         color: black;
     }
+
+    main {
+        width: 100vw;
+        height: 70vh;
+    }
+
+    .flex1 {
+        width: 100vw;
+        min-height: 70vh;
+    }
 }
 
 
@@ -87,7 +93,7 @@ main {
 footer {
     background-color: #666666;
     bottom: 0px;
-    width: 99.5%;
+    width: 100%;
     min-height: 95px;
     margin-top: 30px;
 }
@@ -177,31 +183,35 @@ footer {
 
 .textHist, .textObjt, .textPC, .textSP, .textMI  {
     display: none;
-    max-width: 1350px;
-}
- /*
-.textObjt{
-    display: none;
+    max-width: 100%;
+    margin: 10px;
+
 }
 
-.textPC{
-    display: none;
+/*Tabela */
+tbody{
+    color: #333333;
+    font: normal 14px/1.6em 'merriweather', Georgia, Times, 'Times New Roman', serif;
+    visibility: visible;
+    text-align: left;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin: 0;
+    padding: 0;
+}
+/*
+#course-tabs table.listing tr:nth-child(odd) th, #course-tabs table.listing td {
+    border-right: 2px solid rgb(244, 244, 249);
 }
 
-.textSP{
-    display: none;
-}
-
-.textMI{
-    display: none;
-}
-*/
-
-
+table.invisible td, table.invisible th, table.plain td, table.plain th, table.listing td, table.listing th {
+    padding: 0.5em 1em;
+    vertical-align: top;
+} */
 /* Media Tags Versão Mobile */ 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 860px) {
     #menu_icon {
-    width: 65px;
+    width: 13%;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -210,6 +220,10 @@ footer {
     .logoiscap{
     width: auto;
     max-width: 100% !important;
+    }
+
+    .header{
+
     }
 
     .selector {
@@ -248,7 +262,6 @@ footer {
     }
     
     footer{
-        position: initial;
         margin-top: 30px;
         
     }
@@ -271,6 +284,8 @@ footer {
 
     .flex1{
         display: initial;
+        height: auto;
+        width: auto;
     }
 
     .menu{
