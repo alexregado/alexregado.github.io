@@ -78,12 +78,10 @@ body {
     }
 
     main {
-        width: 100vw;
-        height: 70vh;
+        min-height: 70vh;
     }
 
     .flex1 {
-        width: 100vw;
         min-height: 70vh;
     }
 }
@@ -208,6 +206,26 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
     padding: 0.5em 1em;
     vertical-align: top;
 } */
+
+
+/* Página Projetos e Disserações */
+.box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+}
+
+.flex2{
+    max-width: 99%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+
 /* Media Tags Versão Mobile */ 
 @media screen and (max-width: 860px) {
     #menu_icon {
