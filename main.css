@@ -222,27 +222,44 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
 
 /* Página Projetos e Disserações */
 .box_one {
-    width: 300px;
+    width: 350px;
     height: auto;
     border: 2px solid black;
     margin: 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin: auto;
-    text-decoration: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    text-decoration: none !important;
+    border-radius: 35px;
 }
 
-.box_one:visited{
+a:visited, a:active, a:hover, a:link {
+    text-decoration: none !important;
+    color: black;
+}
+
+.box_one:visited, .box_one:active, .box_one:hover, .box_one:link {
     text-decoration: none;
+    text-decoration-color: white;
+}
+
+.link_none:visited{
+    text-decoration: none;
+    color: black;
 }
 
 
-.box_one p{
+.link_none{
     border-top: 2px solid black;
     margin: 0;
+    text-decoration: none;
+    text-align: center;
+    
 }
 .img_one{
-    width: 300px;
+    width: 350px;
+    border-radius: 35px;
 }
 
 
@@ -252,6 +269,7 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: auto;
 }
 
 
