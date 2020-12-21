@@ -222,21 +222,22 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
 
 /* Página Projetos e Disserações */
 .box_one {
-    width: 350px;
+    max-width: 400px;
     height: auto;
     border: 2px solid black;
     margin: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
     margin-right: 50px;
     margin-left: 50px;
-    text-decoration: none !important;
+    margin: auto;
+    text-decoration: none ;
     border-radius: 35px;
     flex-basis: 33%;
 }
 
 a:visited, a:active, a:hover, a:link {
-    text-decoration: none !important;
+    text-decoration: none;
     color: black;
 }
 
