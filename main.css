@@ -232,6 +232,7 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
     margin-left: 50px;
     text-decoration: none !important;
     border-radius: 35px;
+    flex-basis: 33%;
 }
 
 a:visited, a:active, a:hover, a:link {
@@ -266,6 +267,7 @@ a:visited, a:active, a:hover, a:link {
 .flex2{
     max-width: 99%;
     display: flex;
+    flex-flow: row wrap;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
