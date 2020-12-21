@@ -91,7 +91,7 @@
         </div>
     </footer>
     <script>
-                        // Menu Expand 
+                // Menu Expand 
                 const menu = document.querySelector('#menu_icon');
                 const menuList = document.querySelector('.selector');
 
@@ -102,6 +102,18 @@
                         menuList.style.display = 'none';
                     }
                 });
+
+
+                // Img size = to window
+                let img = document.querySelector('.img_one');
+                const size = document.querySelector('.box_one').clientWidth;
+                const div_size = document.querySelector('.flex2');
+
+                div_size.addEventListener("resize", () => {
+                    console.log('Size change');
+                });
+                img.clientWidth = size;
+                //let img1.style.width = size;
     </script>
 </body>
 </html>
