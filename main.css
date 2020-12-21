@@ -227,8 +227,9 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
 
 /* Página Projetos e Disserações */
 .box_one {
-    max-width: 400px;
-    width: fit-content;
+    width: 350px;
+    max-width: 350px;
+    /* width: fit-content; */
     height: auto;
     border: 2px solid black;
     margin: 3%;
@@ -239,7 +240,7 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
     margin: auto;
     text-decoration: none ;
     border-radius: 35px;
-    flex-basis: 33%;
+    flex-basis: 45%
     box-shadow:0 10px 7px rgba(0, 0, 0, 0.3), 12px 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
@@ -267,8 +268,8 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
     
 }
 .img_one{
-    /* width: 350px; */
-    max-width: 400px;
+    width: 350px; 
+    max-width: 380px;
     border-radius: 35px;
 }
 
