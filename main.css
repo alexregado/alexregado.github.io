@@ -29,6 +29,7 @@ body {
     width: 100%;
     height: 444px;
     object-fit: cover;
+    margin-bottom: 50px;
 }
 
 .intro { 
@@ -40,7 +41,6 @@ body {
     margin: auto;
     color: #ca4d24;
     max-width: 100%;
-    margin-top: 50px;
     margin-bottom: 53px;
     border-bottom: 2px solid #ca4d24;
 }
@@ -82,7 +82,7 @@ main {
     }
 
     main {
-        min-height: 70vh;
+        min-height: 70.5vh;
     }
 
     .flex1 {
@@ -97,7 +97,6 @@ footer {
     bottom: 0px;
     width: 100%;
     min-height: 95px;
-    margin-top: 30px;
     border-top: 5px solid #ca4d24;
 }
 
@@ -143,6 +142,7 @@ footer {
 .flex1 {
     display: flex;
     margin-top: 30px;
+    background-color: #f4f4f9;
 }
 .pagemenu {
     margin-top: 0px;
@@ -385,7 +385,7 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
     }
     
     footer{
-        margin-top: 30px;
+        /*margin-top: 30px; */
         
     }
 
