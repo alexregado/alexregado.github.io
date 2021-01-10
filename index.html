@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mestrado em Negócio Eletónico">
-    <meta name="keywords" content="mestrado, negócio eletrónico, iscap">
+    <meta name="keywords" content="mestrado, negócio eletrónico, iscap, e-commerce">
     <title>Mestrado Negócio Eletrónico</title>
     <link rel="stylesheet" href="main.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -16,6 +16,33 @@
     <img src="images/menu.png" alt="Icone do Menu" id="menu_icon">
     </div>
 
+
+            <button id="burger" class="open-main-nav">
+                <span class="burger"></span>
+                <span class="burger-text">Menu</span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li>
+                        <div class="list"><a href="index.html">Home</a></div>
+                    </li>
+                    <li>
+                        <div class="list"><a href="sobreomestrado.html">Sobre o Mestrado</a></div>
+                    </li>
+                    <li>
+                        <div class="list"><a href="proj.html">Projetos e Dissertações</a></div>
+                    </li>
+                    <li>
+                        <div class="list"><a href="testemunhos.html">Testemunhos</a></div>
+                    </li>
+                    <li>
+                        <div class="list"><a href="#">Galeria</a></div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--
     <div class="selector">
         <div class="list"><a href="index.html">Home</a></div>
         <div class="list"><a href="sobreomestrado.html">Sobre o Mestrado</a></div>
@@ -23,6 +50,7 @@
         <div class="list"><a href="testemunhos.html">Testemunhos</a></div>
         <div class="list"><a href="#">Galeria</a></div>
     </div>
+    -->
     <hr class="headerhr">
     <main>
         <img src="images/iscap.png" alt="Foto do Exterior do ISCAP" class="iscapImg">
@@ -59,6 +87,40 @@
                     } else {
                         menuList.style.display = 'none';
                     }
+                });
+
+
+
+
+
+
+                    let burger = document.getElementById('burger'),
+                    nav    = document.getElementById('main-nav'),
+                    slowmo = document.getElementById('slowmo');
+
+                burger.addEventListener('click', function(e){
+                    this.classList.toggle('is-open');
+                    nav.classList.toggle('is-open');
+                });
+
+                slowmo.addEventListener('click', function(e){
+                    this.classList.toggle('is-slowmo');
+                });
+
+                /* Onload demo - dirty timeout */
+                let clickEvent = new Event('click');
+
+                window.addEventListener('load', function(e) {
+                    slowmo.dispatchEvent(clickEvent);
+                    burger.dispatchEvent(clickEvent);
+                    
+                    setTimeout(function(){
+                        burger.dispatchEvent(clickEvent);
+                        
+                        setTimeout(function(){
+                            slowmo.dispatchEvent(clickEvent);
+                        }, 3500);
+                    }, 5500);
                 });
     </script>
 </body>
