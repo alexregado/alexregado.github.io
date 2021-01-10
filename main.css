@@ -39,7 +39,7 @@ body {
     font-weight: 900;
     width: 860px;
     margin: auto;
-    color: #ca4d24;
+    color: #000;
     max-width: 100%;
     margin-bottom: 53px;
     border-bottom: 2px solid #ca4d24;
@@ -337,6 +337,7 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
 /* Media Tags Versão Mobile */ 
 @media screen and (max-width: 860px) {
     #menu_icon {
+    display: none !important;
     width: 13%;
     position: absolute;
     top: 0px;
@@ -473,7 +474,8 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
 
 /* Yellow band effect */
 .main-nav::before {
-	 content: '';
+    max-width: 100%;
+	content: '';
     position: absolute;
     top: 0;
     bottom: 0;
@@ -497,6 +499,7 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
     align-items: flex-end;
     justify-content: center;
     transform: translateX(-18%) skew(-16deg);
+    
 }
 
 .main-nav li {
@@ -537,7 +540,8 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
 .main-nav ul,
 .main-nav li {
 	list-style: none;
-	padding: 0;
+    padding: 0;
+    max-width: 100% !important;
 }
 .main-nav a {
 	display: block;
