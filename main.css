@@ -39,10 +39,10 @@ body {
     font-weight: 900;
     width: 860px;
     margin: auto;
-    color: #000;
+    color: #ca4d24;
     max-width: 100%;
     margin-bottom: 53px;
-    border-bottom: 2px solid #ca4d24;
+    /*border-bottom: 2px solid #ca4d24;*/
 }
 
 .selector {
@@ -424,6 +424,12 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
         flex-direction: column;
     }
 
+    /* Menu */
+    .main-nav ul,
+    .main-nav li {
+    
+}
+
 }
 
 
@@ -464,12 +470,14 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
     z-index: -1;
     visibility: hidden;
     transition: all .375s;
+    
 }
 
 .main-nav.is-open {
     opacity: 1;
     z-index: 100;
     visibility: visible;
+    overflow: hidden;
 }
 
 /* Yellow band effect */
@@ -485,10 +493,12 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
     transform-origin: 0 0;
     transform: skew(-14deg) translateX(-120%);
     transition: all .275s .1s;
+    overflow: hidden;
 }
 
 .main-nav.is-open::before {
     transform: skew(-14deg) translateX(0);
+    overflow: hidden;
 }
 
 /* Skewing effect on menu links */
@@ -499,6 +509,7 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
     align-items: flex-end;
     justify-content: center;
     transform: translateX(-18%) skew(-16deg);
+    overflow: hidden;
     
 }
 
@@ -507,6 +518,7 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
     margin: .5rem 0;
     text-align: right;
     transform: skew(16deg);
+    overflow: hidden;
 }
 
 /* Apparition effect on links */
@@ -541,7 +553,7 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
 .main-nav li {
 	list-style: none;
     padding: 0;
-    max-width: 100% !important;
+    overflow: hidden;
 }
 .main-nav a {
 	display: block;
