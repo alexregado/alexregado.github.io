@@ -103,3 +103,24 @@ maisInfo.addEventListener('click', () => {
             
         }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
