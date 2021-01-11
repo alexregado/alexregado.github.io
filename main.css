@@ -50,7 +50,7 @@ body {
 }
 
 .intro.candidaturas{
-    margin: 0px;
+    margin: auto;
     padding-bottom: 30px;
 }
 
@@ -184,7 +184,7 @@ footer {
 /* Página Sobre o mestrado */
 .flex1 {
     display: flex;
-    margin-top: 30px;
+    padding-top: 10px;
     background-color: #f4f4f9;
 }
 .pagemenu {
@@ -227,7 +227,7 @@ footer {
     text-decoration: underline;
 }
 
-.textHist, .textObjt, .textPC, .textSP, .textMI  {
+.textObjt, .textPC, .textSP, .textMI  {
     display: none;
     max-width: 100%;
     margin: 10px;
