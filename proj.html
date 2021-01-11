@@ -12,17 +12,37 @@
 </head>
 <body>
     <div class="header">
-    <img class="logoiscap" src="images/logo_head.png" alt="Logótipo do ISCAP">
-    <img src="images/menu.png" alt="Icone do Menu" id="menu_icon">
-    </div>
+        <img class="logoiscap" src="images/logo_head.png" alt="Logótipo do ISCAP">
+        <img src="images/menu.png" alt="Icone do Menu" id="menu_icon">
+        
+    
+    
+                <button id="burger" class="open-main-nav">
+                    <span class="burger"></span>
+                    <span class="burger-text">Menu</span>
+                </button>
+                <nav class="main-nav" id="main-nav">
+                    <ul>
+                        <li>
+                            <div class="list"><a href="index.html">Home</a></div>
+                        </li>
+                        <li>
+                            <div class="list"><a href="sobreomestrado.html">Sobre o Mestrado</a></div>
+                        </li>
+                        <li>
+                            <div class="list"><a href="proj.html">Projetos e<wbr> Dissertações</a></div>
+                        </li>
+                        <li>
+                            <div class="list"><a href="testemunhos.html">Testemunhos</a></div>
+                        </li>
+                        <li>
+                            <div class="list"><a href="#">Galeria</a></div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
-    <div class="selector">
-        <div class="list"><a href="index.html">Home</a></div>
-        <div class="list"><a href="sobreomestrado.html">Sobre o Mestrado</a></div>
-        <div class="list"><a href="proj.html">Projetos e Dissertações</a></div>
-        <div class="list"><a href="testemunhos.html">Testemunhos</a></div>
-        <div class="list"><a href="#">Galeria</a></div>
-    </div>
     <hr class="headerhr">
     <main>
         <div class="intro"> Fica a conhecer os trabalhos desenvolvidos por todos os finalistas deste mestrado! É só clicar e abrir! </div>
@@ -84,33 +104,49 @@
     <footer>
         <div class="footerflex">
             <div class="linkIscap">
-            <a href="http://www.iscap.ipp.pt">
+            <a target="_blank" rel="noopener noreferrer" href="http://www.iscap.ipp.pt">
                 <p>Acesso à página do ISCAP</p>
-                <img src="images/footerlogo.png" alt="Logo ISCAP" class="footerimg">
+                <img src="images/PNGiscap_logo_preto.png" alt="Logo ISCAP" class="footerimg">
             </a>
             </div>
             <div class="redesSociais">
                 <p>Acompanhe o Mestrado nas redes sociais!</p>
-                <a href="https://www.facebook.com/Mestrado-em-Neg%C3%B3cio-Eletr%C3%B3nico-ISCAPPPORTO-186792701976481"><img src="images/fb.png" alt="Facebook Logo" class="fbLogo" width="46px"></a>
-                <a href="https://www.linkedin.com/company/mestrado-em-neg%C3%B3cio-eletr%C3%B3nico-iscap/"><img src="/images/li.png" alt="LinkedIn Logo" class="liLogo"> </a>
-                <a href="https://www.instagram.com/negocio_eletronico_/"> <img src="images/ig.svg" alt="Instagram Logo" class="igLogo"></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Mestrado-em-Neg%C3%B3cio-Eletr%C3%B3nico-ISCAPPPORTO-186792701976481"><img src="images/fb.png" alt="Facebook Logo" class="fbLogo" width="46px"></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/mestrado-em-neg%C3%B3cio-eletr%C3%B3nico-iscap/"><img src="/images/li.png" alt="LinkedIn Logo" class="liLogo"> </a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/negocio_eletronico_/"> <img src="images/ig.png" alt="Instagram Logo" class="igLogo"></a>
             </div>
             <div></div>
         </div>
     </footer>
     <script>
-                // Menu Expand 
-                const menu = document.querySelector('#menu_icon');
-                const menuList = document.querySelector('.selector');
+                      let burger = document.getElementById('burger'),
+                    nav    = document.getElementById('main-nav'),
+                    slowmo = document.getElementById('slowmo');
 
-                menu.addEventListener('click', () => {
-                    if(menuList.style.display == 'none') {
-                        menuList.style.display = 'block';
-                    } else {
-                        menuList.style.display = 'none';
-                    }
+                burger.addEventListener('click', function(e){
+                    this.classList.toggle('is-open');
+                    nav.classList.toggle('is-open');
                 });
 
+                slowmo.addEventListener('click', function(e){
+                    this.classList.toggle('is-slowmo');
+                });
+
+                /* Onload demo - dirty timeout */
+                let clickEvent = new Event('click');
+
+                window.addEventListener('load', function(e) {
+                    slowmo.dispatchEvent(clickEvent);
+                    burger.dispatchEvent(clickEvent);
+                    
+                    setTimeout(function(){
+                        burger.dispatchEvent(clickEvent);
+                        
+                        setTimeout(function(){
+                            slowmo.dispatchEvent(clickEvent);
+                        }, 3500);
+                    }, 5500);
+                });
     </script>
 </body>
 </html>
