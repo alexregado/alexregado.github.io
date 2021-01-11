@@ -90,6 +90,21 @@ main {
     }
 }
 
+.button_about_us{
+    width: 129px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #ca4d24;
+    border-radius: 8px;
+    margin-top: 25px;
+}
+
+.button_about_us a {
+    text-decoration: none;
+    color: #fff;
+}
 
 /* Footer */ 
 footer {
@@ -345,10 +360,14 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
     }
 
     .logoiscap{
-    width: auto;
+    width: 389px;
     max-width: 100% !important;
+    text-align: left;
     }
-
+    
+    .header {
+    text-align: left;
+    }
 
     .selector {
     display: none;
@@ -427,9 +446,13 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
     /* Menu */
     .main-nav ul,
     .main-nav li {
-    
+    }
 }
 
+@media screen and (max-width: 450px){
+    .logoiscap{
+        width: 280px;
+    }
 }
 
 
@@ -470,7 +493,7 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
     z-index: -1;
     visibility: hidden;
     transition: all .375s;
-    
+    overflow: hidden;
 }
 
 .main-nav.is-open {
@@ -553,7 +576,7 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
 .main-nav li {
 	list-style: none;
     padding: 0;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 .main-nav a {
 	display: block;
@@ -585,7 +608,8 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
 	margin: 0 auto;
 	background: #000;
 	transform: skew(5deg);
-	transition: all .275s;
+    transition: all .275s;
+    
 }
 
 .burger:after,
@@ -594,7 +618,8 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
 	display: block;
 	height: 100%;
 	background: #000;
-	transition: all .275s;
+    transition: all .275s;
+    overflow: hidden;
 }
 
 .burger:after {
@@ -629,7 +654,8 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
 	text-transform: uppercase;
 	font-weight: 500;
 	text-align: center;
-	color: #000;
+    color: #000;
+    overflow: hidden;
 }
 
 .device {
@@ -647,7 +673,8 @@ table.invisible td, table.invisible th, table.plain td, table.plain th, table.li
 	top: 0; right: 0;
 	bottom: 0; left: 0;
 	overflow: hidden;
-	background: linear-gradient(to bottom, #eee, #ddd);
+    background: linear-gradient(to bottom, #eee, #ddd);
+    overflow: hidden;
 }
 
 html {
