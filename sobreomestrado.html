@@ -89,7 +89,58 @@
 
             <div class="textPC">
                 <div class="title_sobrenos">Plano Curricular</div>
-                <img src="images/plano.png" alt="Plano Curricular" class="img_plano">
+                <div class="fst_ano">
+                    <div class="flex5">
+                    <button class="button_ano_um"> 1º ano</button>
+                    <button class="button_ano_dois"> 2º ano</button>
+                    </div>
+                <span class="semestre">1º Semestre</span> 
+                <ul>
+                    <li> <span class="disciplina">Inovação em Comércio Eletrónico e Lean Startup</span>  <br>
+                        O principal objetivo da unidade curricular Inovação em Comércio Eletrónico e Lean Startup é formular um projeto de negócio eletrónico inovador. Para atingir este objetivo são fornecidos conhecimentos necessários para a análise e formulação de modelos de negócio. No final é apresentado o plano de negócio escrito (em grupo) e oral (individual) sob a forma de Investment Pitch.
+                    </li>
+                    <li> <span class="disciplina">Sistemas de Informação para o Negócio Eletrónico</span> <br>
+                        A Unidade Curricular de SINE pretende desenvolver um conjunto de aptidões e competências capazes de enquadrarem as atividades profissionais num vasto corpo de conhecimento em torno dos Sistemas de Informação aplicados ao Negócio Eletrónico, incorporando as melhores práticas de análise, planeamento, conceção, implementação e desenvolvimento de soluções informáticas integradas numa Arquitetura Empresarial.
+                    </li>
+                    <li><span class="disciplina">Introdução à Programação Web</span> <br>
+                        Os conteúdos desta UC permitem que o profissional da área do Comércio Eletrónico, em particular, do Negócio Eletrónico, adquira conhecimentos e desenvolva competências, capazes de aplicar conceitos, desenvolver estratégias e ferramentas na área da programação web (HTML5, folhas de estilo (CSS3), Javascript, PHP e MySQL).
+                    </li>
+                    <li><span class="disciplina">Introdução ao Comércio Eletrónico</span> <br>
+                        Nesta unidade curricular pretende-se que os alunos percebam quais os principais modelos de negócio de comércio eletrónico. Também se presente que tomem conhecimento da realidade atual e das principais tendências no âmbito do Comércio Eletrónico. Os alunos são convidados a realizar pesquisas diversificadas e a construir o seu próprio conhecimento, quer através de dinâmicas de grupo, quer através de dinâmicas individuais.  
+                    </li>
+                    <li><span class="disciplina">Criação de Conteúdos para a Web</span> <br>
+                        Esta unidade curricular pretende contribuir para o sucesso do negócio eletrónico, através do investimento na qualidade linguística e semiótica dos conteúdos digitais multimodais, fomentando o desenvolvimento de estratégias de planificação, redação, revisão e edição que otimizem a eficácia comunicativa digital em contexto negocial (visibilidade, interatividade e acessibilidade de conteúdos).
+                    </li>
+                </ul>
+                <p>2º Semestre</p>
+                <ul>
+                    <li><span class="disciplina">Sistemas de Gestão Web e o Comércio Electrónico</span> <br>
+                        Construção de uma loja em linha. Dado que os alunos já trazem uma ideia de negócio das UCs do 1º semestre, aqui irão focar-se na caracterização da loja quanto às suas especificidades tecnológicas e funcionais (escolhendo o CMS mais apropriado à sua ideia de negócio), e no que pretendem vender.
+                    </li>
+                    <li><span class="disciplina">Logística do Negócio Eletrónico</span> <br>
+                        Desenvolver competências para planear, prever e implementar processos logísticos no negócio eletrónico adaptados aos diferentes modelos de negócio. Compreender a complexidade dos processos de logística no negócio eletrónico, nomeadamente: - transportes, distribuição, pagamentos, gestão de stocks, movimentação e armazenagem. Desenvolver as especificações de uma loja de comércio eletrónico.
+                    </li>
+                    <li><span class="disciplina">Seminários</span> <br>
+                        A UC Seminários tem como objectivo ser um complemento fundamental para uma integração sistemática dos contributos das diferentes áreas inerentes ao Negócio Electrónico recorrendo para tal a apresentações com intervenientes de reconhecido mérito do tecido empresarial, que partilham experiências do mundo real do Negócio Electrónico que vivenciam nas suas organizações.
+                    </li>
+                    <li></li>
+                    <li><span class="disciplina">Metodologias de Investigação e Comunicação Científica</span></li>
+                </ul>
+                </div>
+                <div class="sec_ano">
+                    <p>2º ano</p>
+                    <p>1º Semestre</p>
+                    <ul>
+                        <li><span class="disciplina">Publicidade Online</span> <br>
+                            A unidade curricular aborda a Publicidade Online (Paid, Owned & Earned) e tem como objetivo dotar os alunos de um conjunto de técnicas e ferramentas que lhes permitam desenvolver uma estratégia de publicidade online utilizando as plataformas Google Ads, Facebook e Instagram Ads.
+                        </li>
+                        <li><span class="disciplina">Gestão de Projetos de Negócio Eletrónico </span> <br>
+                            GPNE aborda um conjunto predefinido de fases/processos que descrevem a forma como um projeto deve ser gerido. Define o que fazer, por quem, quando e como. Também descreve como o tempo, o custo, a qualidade, as alterações, os riscos e os constrangimentos devem ser controlados para assegurar que o projeto seja entregue nos prazos e no orçamento previamente acordados.
+                        </li>
+                    </ul>
+                    
+
+                </div>
             </div>
              
             
@@ -268,6 +319,18 @@ maisInfo.addEventListener('click', () => {
             textMI.style.display = 'none';
             
         }
+});
+
+
+let text_ano_dois = document.querySelector('.sec_ano');
+let text_ano_um = document.querySelector('.fst_ano');
+let button2 = document.querySelector('.button_ano_dois');
+
+button2.addEventListener('click', () => {
+    if(text_ano_dois.style.display == 'none'){
+        text_ano_dois.style.display = 'block';
+        text_ano_um
+    }
 });
 </script>
 
