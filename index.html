@@ -12,8 +12,7 @@
 </head>
 <body>
     <div class="header">
-    <img class="logoiscap" src="images/logo_head.png" alt="Logótipo do ISCAP">
-    <img src="images/menu.png" alt="Icone do Menu" id="menu_icon">
+        <a href="http://alexregado.github.io"><img class="logoiscap" src="images/logo_head.png" alt="Logótipo do ISCAP"></a>
     
 
 
@@ -57,27 +56,37 @@
 
     <hr class="headerhr">
     <main>
-        <img src="images/iscap.png" alt="Foto do Exterior do ISCAP" class="iscapImg">
         <div class="introducao"> 
+        <img src="images/pc.jpg" alt="Foto do Exterior do ISCAP" class="iscapImg">
         <p class="intro">Bem vindo à página do Mestrado em Negócio Eletrónico! 
             <br> Aqui vais encontrar tudo sobre o mais recente mestrado do ISCAP.</p>
         </div>  
-        <div class="intro">
+    <div class="intro">
+            <div class="texto_1">
             <img src="images/graph.png" alt="Imagem Informativa" class="img_home">
             <p>O mestrado em Negócio Eletrónico foca-se nas áreas centrais do Negócios Eletrónico, desde da conceção de novos negócio online, à sua manutenção e expansão!<br>
                 Com um ciclo de estudos focado nas TI, vais aprender tudo sobre uma das áreas com mais procura no mercado de trabalho e com melhor remuneração!<br>
                 <button class="button_about_us"><a href="sobreomestrado.html">Sabe Mais!</a></button>
             </p>
-        </div>
+            </div>
+        
 
-        <div class="testemunhos">
+            <div class="testemunhos">
             <div class="intro testemunhos">
                 <img src="images/3593.png" alt="Diploma" class="diploma">
             <p>Este curso surgiu em 2017 com o propósito de formar os melhores profissionais na área do Negócio Eletrónico e segundo os alunos já formados, frequentar este curso
                 vai mudar o rumo da tua vida profissional e académica!<br> Fica a conhecer opinião dos alunos.  </p>
                 <button class="button_about_us"><a href="testemunhos.html">Testemunhos</a></button>
             </div>
+        
+    </div>
+    </div>
+
+        <div class="video_yt">
+        <iframe src="https://www.youtube.com/embed/vIfwRss-3UY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+    </div>
+
 
         <div class="intro candidaturas">
             <p>Queres ficar a saber mais sobre as candidaturas? <br><a target="_blank" rel="noopener noreferrer" href="https://www.ipp.pt/ensino/cursos/mestrado/iscap/20000322#tab-4"> Visita a página oficial do ISCAP sobre o mestrado!</a></p>
@@ -102,22 +111,6 @@
     </footer>
     <script>
                         // Menu Expand 
-                const menu = document.querySelector('#menu_icon');
-                const menuList = document.querySelector('.selector');
-
-                menu.addEventListener('click', () => {
-                    if(menuList.style.display == 'none') {
-                        menuList.style.display = 'block';
-                    } else {
-                        menuList.style.display = 'none';
-                    }
-                });
-
-
-
-
-
-
                     let burger = document.getElementById('burger'),
                     nav    = document.getElementById('main-nav'),
                     slowmo = document.getElementById('slowmo');
