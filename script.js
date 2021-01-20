@@ -25,7 +25,7 @@ hist.addEventListener('click', () => {
 });
 
 
-
+/*
 const objt = document.querySelector('.objt');
 const textObjt = document.querySelector('.textObjt');
 
@@ -41,7 +41,7 @@ objt.addEventListener('click', () => {
             
         }
 });
-
+*/
 
 const planoCur = document.querySelector('.planoCur');
 const textPC = document.querySelector('.textPC');
@@ -50,7 +50,6 @@ planoCur.addEventListener('click', () => {
         if(textPC.style.display == 'none') {
             textPC.style.display = 'block';
             text.style.display = 'none';
-            textObjt.style.display = 'none';
             textSP.style.display = 'none';
             textMI.style.display = 'none';
         } else {
@@ -68,7 +67,6 @@ saidasProf.addEventListener('click', () => {
         if(textSP.style.display == 'none') {
             textSP.style.display = 'block';
             text.style.display = 'none';
-            textObjt.style.display = 'none';
             textPC.style.display = 'none';
             textMI.style.display = 'none';
         } else {
@@ -85,7 +83,6 @@ maisInfo.addEventListener('click', () => {
         if(textMI.style.display == 'none') {
             textMI.style.display = 'block';
             text.style.display = 'none';
-            textObjt.style.display = 'none';
             textPC.style.display = 'none';
             textSP.style.display = 'none';
         } else {
@@ -108,11 +105,12 @@ this.classList.toggle('is-open');
 nav.classList.toggle('is-open');
 });
 
+/*
 slowmo.addEventListener('click', function(e){
 this.classList.toggle('is-slowmo');
 });
 
-/* Onload demo - dirty timeout */
+
 let clickEvent = new Event('click');
 
 window.addEventListener('load', function(e) {
@@ -127,8 +125,23 @@ setTimeout(function(){
     }, 3500);
 }, 5500);
 });
+*/
 
 
+const semestre1 = document.querySelector('.semestre1');
+const semestre2 = document.querySelector('.semestre2');
+const text_semestre1 = document.querySelector('.text_semestre1');
+const text_semestre2 = document.querySelector('.text_semestre2');
+
+
+semestre2.addEventListener('click', () => {
+    if(text_semestre2.style.display == 'none'){
+        text_semestre2.style.display = 'block';
+        text_semestre2.style.display = 'none';
+    }else{
+        text_semestre2.style.display = 'none';
+    }
+});
 
 
 

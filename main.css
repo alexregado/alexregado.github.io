@@ -259,16 +259,35 @@ footer {
     text-decoration: underline;
 }
 
-.textObjt, .textPC, .textSP, .textMI  {
+.textPC, .textSP, .textMI  {
     display: none;
-    max-width: 100%;
     margin: 10px;
+    font-size: 17px !important;
+    max-width: 1010px !important;
+    line-height: 25px !important;
+}
+
+.textHist{
+    font-size: 17px ;
+    max-width: 1010px;
+    line-height: 25px;
+}
+
+.textMI{
+    font-size: 19px;
+}
+
+.text_semestre1{
+    display: block;
+}
+
+.text_semestre2{
+    display: none;
 }
 
 main ul li{
     list-style-type: none;
-    margin-bottom: 50px;
-    
+    margin-bottom: 20px;
 }
 
 
@@ -302,7 +321,7 @@ main ul li{
     justify-content: center;
 }
 
-.button_ano_um, .button_ano_dois {
+.button_ano_um, .button_ano_dois, .semestre1, .semestre2 {
     border: 2px solid black;
     background-color: white;
     color: #ca4d24;
@@ -310,9 +329,10 @@ main ul li{
     font-weight: 700;
     margin: 13px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
-.sec_ano {
+.text_semestre2 {
     display: none;
 }
 
@@ -537,6 +557,10 @@ main ul li{
 
     .menu{
         width: initial;
+    }
+
+    .title_sobrenos{
+        line-height: 46px;
     }
 
 
