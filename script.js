@@ -128,7 +128,20 @@ setTimeout(function(){
 */
 
 
+const semestre1 = document.querySelector('.semestre1');
+const semestre2 = document.querySelector('.semestre2');
+const text_semestre1 = document.querySelector('.text_semestre1');
+const text_semestre2 = document.querySelector('.text_semestre2');
 
+
+semestre2.addEventListener('click', () => {
+    if(text_semestre2.style.display == 'none'){
+        text_semestre2.style.display = 'block';
+        text_semestre2.style.display = 'none';
+    }else{
+        text_semestre2.style.display = 'none';
+    }
+});
 
 
 
