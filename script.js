@@ -25,7 +25,7 @@ hist.addEventListener('click', () => {
 });
 
 
-/*
+
 const objt = document.querySelector('.objt');
 const textObjt = document.querySelector('.textObjt');
 
@@ -41,7 +41,7 @@ objt.addEventListener('click', () => {
             
         }
 });
-*/
+
 
 const planoCur = document.querySelector('.planoCur');
 const textPC = document.querySelector('.textPC');
@@ -66,7 +66,7 @@ const textSP = document.querySelector('.textSP');
 saidasProf.addEventListener('click', () => {
         if(textSP.style.display == 'none') {
             textSP.style.display = 'block';
-            text.style.display = 'none';
+            textObjt.style.display = 'none';
             textPC.style.display = 'none';
             textMI.style.display = 'none';
         } else {
@@ -82,7 +82,7 @@ const textMI = document.querySelector('.textMI');
 maisInfo.addEventListener('click', () => {
         if(textMI.style.display == 'none') {
             textMI.style.display = 'block';
-            text.style.display = 'none';
+            textObjt.style.display = 'none';
             textPC.style.display = 'none';
             textSP.style.display = 'none';
         } else {
@@ -128,20 +128,29 @@ setTimeout(function(){
 */
 
 
-const semestre1 = document.querySelector('.semestre1');
-const semestre2 = document.querySelector('.semestre2');
-const text_semestre1 = document.querySelector('.text_semestre1');
-const text_semestre2 = document.querySelector('.text_semestre2');
+const ano1 = document.querySelector('.fst_ano');
+const ano2 = document.querySelector('.sec_ano');
+const btn1 = document.querySelector('.button_ano_um');
+const btn2 = document.querySelector('.button_ano_dois');
 
 
-semestre2.addEventListener('click', () => {
-    if(text_semestre2.style.display == 'none'){
-        text_semestre2.style.display = 'block';
-        text_semestre2.style.display = 'none';
-    }else{
-        text_semestre2.style.display = 'none';
+btn1.addEventListener('click', () => {
+    if(ano1.style.display == 'none'){
+        ano1.style.display = 'block';
+        ano2.style.display = 'none';
     }
 });
+
+btn2.addEventListener('click', () => {
+    if(ano2.style.display == 'none'){
+        ano2.style.display = 'block';
+        ano1.style.display = 'none';
+    }else{
+        ano2.style.display = 'none';
+        ano1.style.display = 'block';
+    }
+});
+
 
 
 
