@@ -414,6 +414,11 @@ main ul li{
     margin: auto;
 }
 
+.brochura{
+    width: 800px;
+    height: 600px;
+}
+
 
 
 
@@ -581,6 +586,20 @@ main ul li{
         font-size: 23px;
         margin-bottom: 25px;
     }
+
+    
+    .textMI{
+        overflow: hidden;
+        
+    }
+    
+    .brochura{
+        max-width: 350px;
+        height: 600px;
+        margin-left: 0px;
+    }
+
+    
 
 
 
