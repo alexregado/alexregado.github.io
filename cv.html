@@ -134,6 +134,15 @@
                 font-size: 25px;
             }
 
+            .tel, .mail {
+                border: 2px solid white;
+                width: fit-content;
+                margin: auto;
+                padding: 8px;
+                border-radius: 6px;
+                margin-bottom: 25px;
+            }
+
             /* .nota {
                 position: absolute;
                 bottom: 0px;
@@ -146,8 +155,8 @@
         <div class="nome">Alexandre Assunção Regado</div>
         <div class="morada"></div>
         <div class="contactos">
-            <a href="tel:+351935256374">📞 935256374</a>
-            <a href="mailto:alexregado@gmail.com">✉️ alexregado@gmail.com</a>
+            <a href="tel:+351935256374" class="tel">📞 935256374</a>
+            <a href="mailto:alexregado@gmail.com" class="mail">✉️ alexregado@gmail.com</a>
         </div>
         <div class="redesociais">
             <a href="https://www.linkedin.com/in/alexandregado/" target="_blank"><img src="images/linkedin.png" alt="Logo do Linkedin" class="rs_img"></a>
@@ -162,7 +171,15 @@
     </div>
 
     
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PSCHWR9RF2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'G-PSCHWR9RF2');
+    </script>
 <script>
     // setTimeout(() => {
     //     alert('Obrigado por pela visita! Aguardo o seu contacto para começar um novo projeto incrível!')
@@ -171,8 +188,9 @@
     
     setInterval(() => {
         let screenwidth = $('html').width();
-        let screenhight = $('html').height();
-        let cardhight = screenhight *0.9;
+        let screenhight = $(window).height();
+        let htmlheight = $('html').height(screenhight)
+        let cardhight = screenhight *0.8;
         let cardwidth = screenwidth * 0.9;
         console.log(screenwidth, cardwidth);
 
@@ -181,7 +199,7 @@
         $('.card').height(cardhight);
         $('.text').hide();
         }
-    }, 1000);
+    }, 100);
     
     
     
