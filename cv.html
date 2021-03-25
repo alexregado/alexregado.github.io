@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.5.1.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
     </style>
@@ -11,12 +12,17 @@
 
     <style>
         html {
-            background: white;
+            color: white;
+            background: black;
+            background-image: url('images/cv_background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
             font-family: 'Nunito', sans-serif !important;
         }
 
         a {
             color: white;
+            text-decoration: none;
         }
 
 
@@ -30,13 +36,14 @@
             color: white;
             background: black;
             border: 2px solid white;
-            box-shadow: 16px 20px 8px 5px rgb(165 165 165 / 60%);
+            /* box-shadow: 16px 20px 8px 5px rgb(165 165 165 / 60%); */
             border-radius: 10px;
         }
 
         .nome {
             font-size: 40px;
             margin-bottom: 30px;
+            margin-top: 25px;
         }
 
         .contactos {
@@ -73,9 +80,51 @@
         }
 
         .nota {
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+
+
+        @media screen and (max-width: 500px) {
+            .card{
+                width: 885px;
+                border: 2px solid rgb(0, 0, 0);
+                background-color: #ffffff;
+                background: linear-gradient(90deg, rgba(238, 253, 255, 0.1) 0%, rgba(193, 216, 219, 0.1) 100%); 
+                backdrop-filter: blur(5px);
+                z-index: 9999;
+                box-shadow: none;
+                margin-top: 25px;
+                width: auto;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .redesociais, .contactos {
+                flex-direction: column;
+            }
+
+            .text{
+                width: auto;
+                margin-bottom: 50px;
+            }
+
+            iframe{
+                width: auto;
+                margin-top: 25px;
+                margin-bottom: -19px;
+            }
+
+            a {
+                color: rgb(255, 255, 255);
+                margin-top: 35px;
+            }
+
+            /* .nota {
+                position: absolute;
+                bottom: 0px;
+            } */
         }
     </style>
 </head>
@@ -93,17 +142,32 @@
             <a href="http://www.instagram.com/alexregado_ph/" target="_blank"><img src="images/instagram.png" alt="Logo do Instagram" class="rs_img"></a>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11946.653022335808!2d-8.787929662432925!3d41.53323441801505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd244bbaa150b227%3A0xa6078b869457d1d2!2sEsposende!5e0!3m2!1spt-PT!2spt!4v1616620949349!5m2!1spt-PT!2spt" width="800" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="nota"><h5>*O texto e imagens possuem hiperligações!</h5></div>
     </div>
     <div class="text">
         <h2>Bem-vindo ao meu cartão de visita online! <br> Aqui vai encontrar os meus contactos e principais redes sociais com vertente profissional. <br> Aguardo o seu contacto!</h2>
     </div>
 
-    <div class="nota"><h5>*Todos os links e imagens possuem hiperligações</h5></div>
+    
 
 <script>
-    setTimeout(() => {
-        alert('Obrigado por pela visita! Aguardo o seu contacto para começar um novo projeto incrível!')
-    }, 4000);
+    // setTimeout(() => {
+    //     alert('Obrigado por pela visita! Aguardo o seu contacto para começar um novo projeto incrível!')
+    // }, 4000);
+
+    
+    setInterval(() => {
+        let screenwidth = $('html').width();
+        let cardwidth = screenwidth * 0.9;
+        console.log(screenwidth, cardwidth);
+
+        if(screenwidth < 500){
+        $('.card').width(cardwidth);
+        }
+    }, 1000);
+    
+    
+    
 </script>
 </body>
 </html>
