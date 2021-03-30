@@ -458,6 +458,7 @@ main ul li{
 
 .aluno{
     width: 250px;
+    max-height: 315px;
     margin-right: 20px;
     border-radius: 45px;
 }
@@ -579,8 +580,13 @@ main ul li{
     }
 
     .title_sobrenos{
-        line-height: 46px;
+        overflow: hidden;
+        font-size: 40px;
     }
+
+    .title_sobrenos.\31 {
+        line-height: 40px;
+    } 
 
     .proj_diss a {
         font-size: 23px;
@@ -599,7 +605,15 @@ main ul li{
         margin-left: 0px;
     }
 
-    
+    /*Página testemunhos */
+    .aluno{
+        margin: auto;
+
+    }
+
+    .flex3 p {
+        margin: 15px;
+    }
 
 
 
