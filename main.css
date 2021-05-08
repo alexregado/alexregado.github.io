@@ -499,9 +499,11 @@ main ul li{
 
 .aluno{
     width: 250px;
+    height: auto;
     max-height: 315px;
     margin-right: 20px;
     border-radius: 45px;
+    object-fit: cover;
 }
 
 .quotes {
@@ -513,6 +515,7 @@ main ul li{
     font-weight: 600;
 }
 
+.
 
 
 
