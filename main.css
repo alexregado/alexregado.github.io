@@ -29,27 +29,57 @@ body {
     width: 100%;
     height: 444px;
     object-fit: cover;
+    padding-left: -25px !important;
+    padding-right: -25px !important;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    width: 1060px;
+    color: #ca4d24;
+    max-width: 100%;
+    margin-bottom: 6px;
+    text-align: center;
+    margin: auto;
+    text-shadow: 3px 1px white;
+    position: relative;
+    bottom: -47px; 
+}
+
+h2 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 900;
+    color: #ca4d24;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .intro { 
     font-family: sans-serif;
     text-align: center;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 900;
-    width: 860px;
     color: #ca4d24;
     max-width: 100%;
     margin-bottom: 6px;
     width: 96%;
     text-align: center;
     margin: auto;
-    max-width: 970px;
     margin: auto;
     text-shadow: 3px 1px white;
     position: relative;
     bottom: 111px;
 }
-    /*border-bottom: 2px solid #ca4d24;*/
+
+.texto_1, .testemunhos {
+    max-width: 960px;
+    margin: auto;
+    margin-bottom: 100px;
+}
 
 
 body > main > div:nth-child(2) {
@@ -73,7 +103,7 @@ body > main > div.testemunhos > div{
 }
 
 .testemunhos{
-    margin-top: 160px;
+    margin-top: ;
 }
 
 .diploma{
@@ -109,11 +139,14 @@ body > main > div.testemunhos > div{
 
 main {
     background-color: #f4f4f9;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 
 .video_yt {
     text-align: center;
+    margin-top: -61px;
 }
 
 iframe {
@@ -171,12 +204,13 @@ footer {
 
 .footerflex{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .linkIscap {
     margin-left: 10px;
     margin-bottom: 10px;
+    text-align: center;
 }
 .footerimg {
     width: 167px;
@@ -195,10 +229,17 @@ footer {
     color: white;
 }
 
+.redesSociais {
+    margin-left: 35px;
+    text-align: center;
+}
+
 .fbLogo, .liLogo, .igLogo{
     border-radius: 42px;
     width: 46px;
     max-width: 46px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
@@ -493,6 +534,8 @@ main ul li{
 
     .iscapImg{
         height: 250px;
+        width: 100%;
+        overflow: hidden;
     }
     
     .header {
@@ -507,6 +550,14 @@ main ul li{
     font-size: 17px;  
     font-weight: 900;
     z-index: 9999999;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2{
+        font-size: 19px;
     }
 
     .list {
@@ -532,7 +583,7 @@ main ul li{
     text-align: center;
     font-size: 18px;
     margin-bottom: 0px;
-    margin-top: -12px;
+    margin-top: -50px;
     }
     
     .intro p {
@@ -547,12 +598,7 @@ main ul li{
 
 
     .texto_1{
-        margin-bottom: 60px;
-    }
-
-    .testemunhos{
-        margin-top: 150px;
-        margin-bottom: -89px;
+        margin-bottom: 100px;
     }
 
     iframe{
