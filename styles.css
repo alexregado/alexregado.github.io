@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'quicksand';
+    src: url(./Fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+/* MAIN PAGE STYLE */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'quicksand';
+    height: 100vh;
+    background-image: url(./Images/flat-lay-of-workstation-with-copy-space-and-laptop.jpg);
+    background-size: 119%;
+    color: white;
+}
+
+header{
+    text-align: center;
+    width: 42%;
+    min-height: 40vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header p {
+    font-size: 17px;
+} 
+
+main{
+    min-height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mainLink{
+    text-decoration: none;
+}
+
+.mainLinkText{
+    z-index: 2;
+}
+
+.container{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.7s;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container:hover{
+    transform: scale(1.2);
+}
+
+.mainLinkBackground{
+    width: 121%;
+    position: absolute;
+    z-index: 1;
+    filter: blur(2px);
+    border-radius: 10px;
+}
+
+.socialMedia.email svg {
+    fill: white;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+}
+
+footer a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+

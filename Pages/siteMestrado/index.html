@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mestrado em Negócio Eletónico">
+    <meta name="keywords" content="mestrado, negócio eletrónico, iscap, e-commerce">
+    <title>Mestrado Negócio Eletrónico</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="icon" type="image/png" href="images/favicon.ico"/>
+</head>
+<body>
+    <div class="header">
+        <a href="http://alexregado.github.io"><img class="logoiscap" src="images/logo_head.png" alt="Logótipo do ISCAP"></a>
+    
+
+
+            <button id="burger" class="open-main-nav">
+                <span class="burger"></span>
+                <span class="burger-text">Menu</span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li>
+                        <div class="list"><a href="index.html">Home</a></div>
+                    </li>
+                    <li>
+                        <div class="list"><a href="sobreomestrado.html">Sobre o Mestrado</a></div>
+                    </li>
+                    <li>
+                        <div class="list"><a href="testemunhos.html">Testemunhos</a></div>
+                    </li>
+                   
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <hr class="headerhr">
+    <img src="images/pc.jpg" alt="Foto do Exterior do ISCAP" class="iscapImg">
+    <main>
+        <div class="introducao"> 
+            <div class="intro"><h1>Bem vindo à página do Mestrado em Negócio Eletrónico!</h1>
+                <br> <h2>Aqui vais encontrar tudo sobre este mestrado, único em Portugal.</h2>
+            </div>
+        </div>  
+    <div class="intro">
+        <div class="texto_1"> 
+            <img src="images/graph.png" alt="Imagem Informativa" class="img_home">
+            <p>O mestrado em Negócio Eletrónico foca-se nas áreas centrais do Negócios Eletrónico, desde da conceção de novos negócio online, à sua manutenção e expansão!<br>
+                Com um ciclo de estudos focado nas TI, vais aprender tudo sobre uma das áreas com mais procura no mercado de trabalho e com melhor remuneração!<br>
+            </p>
+                <button class="button_about_us"><a href="sobreomestrado.html">Sabe Mais!</a></button>
+            </div>
+        
+
+            <div class="testemunhos">
+                <img src="images/3593.png" alt="Diploma" class="diploma">
+            <p>Este curso surgiu em 2017 com o propósito de formar os melhores profissionais na área do Negócio Eletrónico e segundo os alunos já formados, frequentar este curso
+                vai mudar o rumo da tua vida profissional e académica!<br> Fica a conhecer opinião dos alunos.  </p>
+                <button class="button_about_us"><a href="testemunhos.html">Testemunhos</a></button>
+            </div>
+        
+    </div>
+    </div>
+
+        <div class="video_yt">
+        <iframe src="https://www.youtube.com/embed/vIfwRss-3UY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+        <div class="intro candidaturas">
+            <p>Queres ficar a saber mais sobre as candidaturas? <br><a target="_blank" rel="noopener noreferrer" href="https://www.ipp.pt/ensino/cursos/mestrado/iscap/20000322#tab-4"> Visita a página oficial do ISCAP sobre o mestrado!</a></p>
+        </div>
+    </main>
+    <footer>
+        <div class="footerflex">
+            <div class="linkIscap">
+            <a target="_blank" rel="noopener noreferrer" href="http://www.iscap.ipp.pt">
+                <p>Acesso à página do ISCAP</p>
+                <img src="images/PNGiscap_logo_preto.png" alt="Logo ISCAP" class="footerimg">
+            </a>
+            </div>
+            <div class="redesSociais">
+                <p>Acompanhe o Mestrado nas redes sociais!</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Mestrado-em-Neg%C3%B3cio-Eletr%C3%B3nico-ISCAPPPORTO-186792701976481"><img src="images/fb.png" alt="Facebook Logo" class="fbLogo" width="46px"></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/mestrado-em-neg%C3%B3cio-eletr%C3%B3nico-iscap/"><img src="/images/li.png" alt="LinkedIn Logo" class="liLogo"> </a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/negocio_eletronico_/"> <img src="images/ig.png" alt="Instagram Logo" class="igLogo"></a>
+            </div>
+            <div></div>
+        </div>
+    </footer>
+    <script>
+                        // Menu Expand 
+                    let burger = document.getElementById('burger'),
+                    nav    = document.getElementById('main-nav'),
+                    slowmo = document.getElementById('slowmo');
+
+                burger.addEventListener('click', function(e){
+                    this.classList.toggle('is-open');
+                    nav.classList.toggle('is-open');
+                });
+
+                slowmo.addEventListener('click', function(e){
+                    this.classList.toggle('is-slowmo');
+                });
+
+                /* Onload demo - dirty timeout */
+                let clickEvent = new Event('click');
+
+                window.addEventListener('load', function(e) {
+                    slowmo.dispatchEvent(clickEvent);
+                    burger.dispatchEvent(clickEvent);
+                    
+                    setTimeout(function(){
+                        burger.dispatchEvent(clickEvent);
+                        
+                        setTimeout(function(){
+                            slowmo.dispatchEvent(clickEvent);
+                        }, 3500);
+                    }, 5500);
+                });
+    </script>
+
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NCKS5JK7P3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NCKS5JK7P3');
+    </script>
+</body>
+</html>

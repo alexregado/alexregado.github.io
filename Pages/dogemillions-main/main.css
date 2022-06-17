@@ -1,0 +1,249 @@
+html {
+    background: linear-gradient(90deg, rgba(190,128,13,0.8799894957983193) 0%, rgba(242,169,90,1) 33%, rgba(255, 175, 2, 0.541));
+    overflow: hidden;
+}
+
+
+main{
+    width: 1000px;
+    margin: auto;
+}
+
+.intro-text, .instructions {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.help {
+    position: absolute;
+    top: 200px;
+    right: -25px;
+    transform: rotate(90deg);
+    width: 76px;
+    height: 26px;
+    background: red;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.main-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-right{
+    margin-top: 15px;
+    display: block;
+    width: 782px;
+    margin-left: 100px;
+}
+
+.Fail, .sucess{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+.inputNumbers{
+    width: 467px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.inputStars{
+    width: 234px;
+    margin: auto;
+}
+
+.randNumbers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 632px;
+}
+
+.randStars {
+    display: flex;
+    justify-content: center;
+    margin-left: 107px;
+    margin-right: 107px;
+}
+
+.ball{
+    width: 150px;
+    height: 140px;
+    border-radius: 60px;
+    /* background: blue; */
+    background-image: url(dogecoin.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 250px;
+    color: black;
+    font-weight: 900;
+    font-size: 19px;
+    text-align: center;
+    align-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.ball p {
+    margin-top: 46px;
+    font-family: fantasy;
+    font-size: 44px;
+    opacity: 1.5 !important;
+}
+
+.star {
+    font-size: 90px;
+    z-index: 1;
+    position: absolute;    
+}
+
+.startext{
+    z-index: 99999;
+    padding-top: 53px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 29px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.starscont {
+    display: flex;
+    justify-content: center;
+    height: 128px;
+    width: 350px;
+    margin: auto;
+}
+
+.number{
+    border: 2px solid black;
+    margin-bottom: 7px;
+    font-family: monospace;
+    font-size: 17px;
+    background: tomato;
+    box-shadow: 2px 5px 3px;
+}
+
+.p-number{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    line-height: 11px;
+}
+
+label{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    line-height: 59px;
+    cursor: pointer;
+}
+
+.checked{
+    line-height: 59px;
+    background-image: url(cross.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75px;
+    background-color: rgb(117, 117, 117);
+    /* color: rgb(77, 255, 71); */
+}
+
+.buttons{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reset, #submitbtn, .close{
+    width: 164px;
+    font-size: 29px;
+    height: 56px;
+    font-family: fantasy;
+    background: tomato;
+    margin: auto;
+    margin-top: 25px;
+    font-weight: 900;
+}
+
+.close{
+    width: 79px;
+    font-size: 19px;
+    height: 34px;
+    font-family: fantasy;
+    background: tomato;
+    margin: auto;
+    font-weight: 900;
+}
+
+.message{
+    margin-top: 35px;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.Fail{
+    color: red;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.sucess{
+    color: green;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.balance {
+    position: absolute;
+    bottom: 20px;
+    right: -3px;
+    font-size: 26px;
+    font-family: fantasy;
+    width: 175px;
+    height: 72px;
+    border: 2px solid black;
+    text-align: center;
+    font-weight: 900;
+    background-image: linear-gradient(to left, rgba(252, 176, 252, 0.719), rgba(159, 89, 209, 0.575), rgba(114, 219, 219, 0.719), rgba(132, 255, 132, 0.726), rgba(255, 255, 107, 0.575), rgba(255, 166, 0, 0.651), rgba(255, 98, 98, 0.651));
+}
+
+.€ {
+    color: red;
+}
+
+
+.helpmsg {
+    display: none;
+    position: absolute;
+    width: 717px;
+    height: 252px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5); 
+    top: 35%;
+    right: 25%;
+    text-align: center;
+    z-index: 99999;
+}
+
+footer {
+    width: 107%;
+    height: 20px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+    color: white;
+    background: black;
+}
