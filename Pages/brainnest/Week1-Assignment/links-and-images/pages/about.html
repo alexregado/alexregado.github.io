@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>About</title>
+</head>
+
+<body>
+    <a href="../index.html" title="Go to first page" class="goHomeLink"><img src="../images/home-icon2.png" alt="Home Icon" class="goHome"></a>
+    <main>
+        <nav>
+            <div class="titleWrapper">
+                <h1 style="text-transform: uppercase;font-size: 44px;">About</h1>
+                <h3 style="margin-top: -26px; font-weight: 300;">Alexandre</h3>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="showContent">
+                <p class="instructions">Hover over the titles to show content!</p>
+                <div class="contentChild">
+                    <ul class="shoppingItems child">
+                        <li class="listItem">Cookies</li>
+                        <li class="listItem">Chocolate</li>
+                        <li class="listItem">Gummies</li>
+                        <li class="listItem">A brand new iPad</li>
+                        <li class="listItem">Coding Skills</li>
+                    </ul>
+                </div>
+
+                <div class="contentChild">
+                    <ol class="todosContent child">
+                        <li>Wake Up</li>
+                        <li>Take a shower</li>
+                        <li>Eat Breakfast</li>
+                        <li>Code</li>
+                        <li>Sleep</li>
+                    </ol>
+                </div>
+
+                <div class="contentChild">
+                    <ol class="travelContent child">
+                            <li>USA</li>
+                            <ul>
+                                <li>New York</li>
+                                <li>Yellowstone National Park</li>
+                            </ul>
+                            <li>Rome</li>
+                            <li>Venece</li>
+                            <li>Paris</li>
+                    </ol>
+                </div>
+
+                <div class="contentChild">
+                    <ul class="gamesContent child">
+                            <li>GTA San Andreas</li>
+                            <li>Sly Cooper</li>
+                            <li>GTA V</li>
+                            <li>Forza</li>
+                            <ol>
+                                <li>Forza Horizon 5</li>
+                                <li>Forza Horizon 4</li>
+                            </ol>
+                    </ul>
+                </div>
+            </div>
+            <div class="contentControl">
+                <div class="shopping">
+                    <h2 class="mainTitle shoppingTitle">Shopping List</h2>
+                </div>
+                <div class="todos">
+                    <h2 class="mainTitle todoTitle">Todo's List</h2>
+                </div>
+                <div class="travel">
+                    <a href="./places.html" title="Click me!">
+                        <h2 class="mainTitle travelTitle">Places To Visit</h2>
+                    </a>
+                </div>
+                <div class="games">
+                    <h2 class="mainTitle gamesTitle">Top 5 Games</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<script>
+
+    function showInfo(title, infoContent) {
+        let instructions = document.querySelector('.instructions');
+        let shoppingTitle = document.querySelector(`${title}`);
+        let content = document.querySelector(`${infoContent}`);
+        let contentWrapper = document.querySelector('.showContent');
+        let contentChild = document.getElementsByClassName('child');
+
+        shoppingTitle.addEventListener('mouseover', () => {
+            instructions.style.display = 'none'
+            content.style.display = 'block';
+            content.style.width = '100%';
+            content.style.opacity = '1';
+            for (let i = 0; i < contentChild.length; i++) {
+                (contentChild[i] != content) ? contentChild[i].style.display = 'none' : false
+            }
+        });
+    }
+
+    showInfo(".shopping", ".shoppingItems");
+    showInfo(".todos", ".todosContent");
+    showInfo(".travel", ".travelContent");
+    showInfo(".games", ".gamesContent");
+
+</script>
+
+</html>
