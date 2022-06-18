@@ -103,3 +103,12 @@ footer a {
     text-decoration: none;
 }
 
+@media screen and (max-width: 650px) {
+    header{
+        width: 75%;
+    }
+
+    footer{
+        position: initial;
+    }
+}
