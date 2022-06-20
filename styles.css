@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'quicksand';
-    src: url(./fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+    src: url(./webFonts/Quicksand/Quicksand-VariableFont_wght.ttf);
 }
 
 /* MAIN PAGE STYLE */
@@ -8,10 +8,8 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'quicksand';
-    height: 100vh;
-    background-image: url(./images/flat-lay-of-workstation-with-copy-space-and-laptop.jpg);
-    background-size: 119%;
     color: white;
+    background-color: black;
 }
 
 header{
@@ -23,6 +21,14 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.bk-img{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: 127vh;
+    object-fit: cover;
 }
 
 header p {
@@ -44,6 +50,17 @@ main{
 
 .mainLinkText{
     z-index: 2;
+}
+
+.profileImg{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 286px;
+    border: 10px solid black;
+    margin-left: 10px;
+    margin-top: 34px;
 }
 
 .container{
@@ -89,9 +106,12 @@ footer{
     align-content: center;
     align-items: center;
     justify-content: space-evenly;
-    position: absolute;
-    bottom: 5px;
+    bottom: 11px;
     width: 100%;
+}
+
+.socialMedia {
+    margin-bottom: 25px;
 }
 
 footer a {
@@ -104,11 +124,27 @@ footer a {
 }
 
 @media screen and (max-width: 650px) {
+    .bk-img{
+        position: fixed !important;
+        width: 231% !important;
+        z-index: -1;
+        transform: rotate(90deg);
+        left: -80%;
+    }
+    
     header{
         width: 75%;
     }
 
     footer{
         position: initial;
+        margin-top: 49px;
+        padding-bottom: 20px;
+    }
+
+    .socialMedia.email, .socialMedia.phone{
+        backdrop-filter: brightness(0);
+        border-radius: 34%;
+        padding: 2px;
     }
 }
