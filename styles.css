@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'quicksand';
-    src: url(./webFonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+    src: url('./webFonts/Quicksand/Quicksand-VariableFont_wght.ttf');
 }
 
 /* MAIN PAGE STYLE */
