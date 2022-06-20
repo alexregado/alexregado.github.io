@@ -1,7 +1,8 @@
 @font-face {
     font-family: 'quicksand';
-    src: url(./fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+    src: url('./webFonts/Quicksand/Quicksand-VariableFont_wght.ttf');
 }
+
 
 body{
     margin: 0;
@@ -60,4 +61,21 @@ body{
 
 .projInfo{
     width: 55%;
+}
+
+
+@media screen and (max-width: 650px) {
+    .projImage {
+        width: 80%;
+        padding: 35px;
+        border-radius: 45px;
+    }
+
+    .projImageWrapper {
+        text-align: center;
+    }
+
+    .projInfo {
+        width: 80%;
+    }
 }
