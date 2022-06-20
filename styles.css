@@ -10,6 +10,10 @@ body{
     font-family: 'quicksand';
     color: white;
     background-color: black;
+    background-image: url("./images/flat-lay-of-workstation-with-copy-space-and-laptop.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 header{
@@ -24,15 +28,12 @@ header{
 }
 
 .bk-img{
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-    height: 127vh;
-    object-fit: cover;
+    display: none;
 }
 
 header p {
     font-size: 17px;
+    margin-bottom: 1.67em;
 } 
 
 main{
@@ -133,6 +134,7 @@ footer a {
 
 @media screen and (max-width: 650px) {
     .bk-img{
+        display: block;
         position: fixed !important;
         width: 231% !important;
         z-index: -1;
@@ -166,4 +168,24 @@ footer a {
         border-radius: 34%;
         padding: 2px;
     }
+}
+
+.goHome{
+    background-color: white;
+    color: black;
+    font-weight: 900;
+    font-size: 49px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 37px;
+    line-height: 46px;
+    position: fixed;
+    top: 15px;
+    padding: 10px 25px;
+    border-radius: 0 35px 35px 0;
+    left: -111px;
+    cursor: pointer;
+    transition: all 0.7s;
 }

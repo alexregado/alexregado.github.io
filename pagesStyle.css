@@ -51,12 +51,13 @@ body{
 
 .projImageWrapper{
     width: 45%;
+    text-align: center;
 }
 
 .projImage{
     width: 90%;
-    padding: 35px;
-    border-radius: 45px;
+    margin: 30px 0px;
+    border-radius: 20px;
 }
 
 .projInfo{
@@ -67,15 +68,37 @@ body{
 @media screen and (max-width: 650px) {
     .projImage {
         width: 80%;
-        padding: 35px;
-        border-radius: 45px;
+        margin-top: 1.83em;
+        border-radius: 20px;
+        padding: 0;
+
     }
 
     .projImageWrapper {
-        text-align: center;
+        width: 100%;
     }
 
     .projInfo {
         width: 80%;
     }
+}
+
+.goHome{
+    background-color: white;
+    color: black;
+    font-weight: 900;
+    font-size: 49px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 37px;
+    line-height: 46px;
+    position: fixed;
+    top: 15px;
+    padding: 10px 25px;
+    border-radius: 0 35px 35px 0;
+    left: -111px;
+    cursor: pointer;
+    transition: all 0.7s;
 }
