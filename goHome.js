@@ -4,7 +4,7 @@ goHome.classList.add("goHome");
 goHome.innerHTML = "<a href='./index.html' title='Go to Homepage'><img src='./images/home.png' alt='Home Icon' title='Go to Homepage'></a><p class='openWidget'>&nbsp;&nbsp;&nbsp;&nbsp;></p>";
 
 // APPEND ELEMENT
-let mc = document.querySelector(".mainContainer")
+let mc = document.querySelector("body")
 mc.appendChild(goHome) 
 
 

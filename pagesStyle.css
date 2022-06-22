@@ -102,3 +102,112 @@ body{
     cursor: pointer;
     transition: all 0.7s;
 }
+
+
+
+
+/* COURSES STYLES */
+.pageWrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 47px;
+    margin: 15px;
+    margin-bottom: 30px;
+}
+
+.courseCompany{
+    margin-bottom: 3px;
+}
+
+.courseDuration{
+    margin-top: 0px;
+    margin-bottom: 3px;
+}
+
+.courseArea{
+    margin-top: 5px;
+}
+
+.courseImage{
+    width: 80%;
+}
+
+.course{
+    box-shadow: -4px 5px 17px 3px #0000002b;
+    border-radius: 20px;
+    background-color: #e7e7e7;
+    width: 40%;
+    min-width: 335px;
+    max-width: 610px;
+    text-align: center;
+    padding: 2px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGE E-COMMERCE */
+.experience{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.responsabilities, .tools, .results{
+    flex: 30%;
+    background-color: #e7e7e7;
+    margin: 15px;
+    padding: 18px;
+    border-radius: 20px;
+    box-shadow: -4px 5px 17px 3px #00000029;
+}
+
+.eComTitle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.liTitle{
+    display: block;
+    margin-left: -15px;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.eComDescription{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 7%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.companyLogo{
+    width: 70%;
+    text-align: center;
+    margin: 0% 15%;
+}

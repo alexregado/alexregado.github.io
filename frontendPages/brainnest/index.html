@@ -14,16 +14,16 @@
                 <h1 class="mainTitle">Frontend Development Industry Training</h1>
             </div>
             <div class="weeks">
-                <a href="./Week1-Assignment/links-and-images/indexA.html"><div class="week one">Week 1 <br><img src="https://logodownload.org/wp-content/uploads/2016/10/html5-logo-10.png" alt="HTML Logo" class="weekLogo"></div></a>
-                <a href="./Week2CSS/indexCss.html"><div class="week two">Week 2 <br><img src="https://glossariorubenalveshome.files.wordpress.com/2019/02/css3-logo.png" alt="CSS Logo" class="weekLogo"></div></a>
-                <a href="./Week3JS/indexJs.html"><div class="week three">Week 3 <br><img src="https://i2.wp.com/thebamboocode.com/wp-content/uploads/2016/03/js-logo.png?fit=500%2C500" alt="JS Logo" class="weekLogo"></div></a>
+                <a href="./Week1-Assignment/links-and-images/indexA.html"><div class="week one">Week 1 <br><img src="https://logodownload.org/wp-content/uploads/2016/10/html5-logo-10.png" alt="HTML Logo" class="weekLogo html"></div></a>
+                <a href="./Week2CSS/indexCss.html"><div class="week two">Week 2 <br><img src="https://glossariorubenalveshome.files.wordpress.com/2019/02/css3-logo.png" alt="CSS Logo" class="weekLogo css"></div></a>
+                <a href="./Week3JS/indexJs.html"><div class="week three">Week 3 <br><img src="https://i2.wp.com/thebamboocode.com/wp-content/uploads/2016/03/js-logo.png?fit=500%2C500" alt="JS Logo" class="weekLogo js"></div></a>
                 <a href="./Week4/indexFinal.html"><div class="week four">Week 4 <br><img src="https://raw.githubusercontent.com/MatheusHonorato/curso-front-end-marco-bruno/master/html-css-js.png" alt="FDIndustryTraining Logo" class="weekLogo"></div></a>
             </div>
-            <div class="certificate">
+            <!-- <div class="certificate">
                 <h2 class="certTitle">Certificate of Completion</h2>
                 <img class="certImg" src="https://i.ibb.co/GFdN95B/certificate.jpg" alt="Certificate">
                 <div class="comingSoon">Coming Soon...</div>
-            </div>
+            </div> -->
         </main>
     </body>
     <style>
@@ -74,8 +74,7 @@
         }
 
         .week{
-            width: 14vw;
-            height: 9vw;
+            width: 100%;
             text-align: center;
             color: white;
             font-size: xx-large;
@@ -94,8 +93,12 @@
         }
 
         .weekLogo{
-            width: 1;
-            max-width: 250px;
+            max-width: 195px;
+        }
+
+        .weekLogo.html, .weekLogo.css{
+            max-width: 150px;
+            margin-top: 45px;
         }
 
         .tech{
