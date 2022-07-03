@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <style>
+        body{
+            margin: 0;
+            border: 0;
+            background-position: center;
+            background-size: cover;
+            backdrop-filter: blur(6px);
+            height: 100vh;
+            transition: all 1s;
+        }
+
+        .miniPhoto{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            object-position: center;
+            border: 20px solid white;
+        }
+
+        .photosWrapper{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .active{
+            position: absolute;
+            width: 59vw;
+            height: 93vh;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .closeX{
+            position: fixed;
+            top: -8px;
+            left: 17.2vw;
+            background: black;
+            color: white;
+            padding: 15px;
+            border-radius: 100%;
+            width: 15px;
+            height: 15px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="photosWrapper">
+            <div class="photo">
+                <img src="./images/photos/mountains.jpeg" alt="" class="miniPhoto">
+            </div>
+            <div class="photo">
+                <img src="./images/photos/road.jpeg" alt="" class="miniPhoto">
+            </div>
+            <div class="photo">
+                <img src="./images/photos/sunset.jpeg" alt="" class="miniPhoto">
+            </div>
+            <div class="photo">
+                <img src="./images/photos/swing.jpeg" alt="" class="miniPhoto">
+            </div>
+        </div>
+    </main>
+    <script>
+        let miniPhoto = document.querySelectorAll(".miniPhoto");
+        let pageBody = document.querySelector("body");
+        let closeX = document.createElement("div");
+        closeX.classList.add("closeX");
+        closeX.innerText = "X";
+        
+        miniPhoto.forEach( photo => {
+            photo.addEventListener('mouseover', ()=>{
+                pageBody.style.backgroundImage = `url(${photo.src})`;
+            });
+
+            photo.addEventListener("click", ()=>{
+                photo.classList.add("active");
+                photo.parentElement.append(closeX);
+            });
+
+            closeX.addEventListener("click", ()=>{
+                photo.classList.remove("active");
+                closeX.remove();
+            });
+        });
+        
+
+
+    </script>
+</body>
+</html>

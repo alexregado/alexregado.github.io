@@ -6,7 +6,7 @@ let clear = document.querySelector(".clear");
 let equals = document.querySelector(".equal");
 let del = document.querySelector(".delete");
 let num = 0;
-
+let clickedPoint = false;
 let separator;
 
 function clearAll(){
@@ -21,8 +21,19 @@ clear.addEventListener("click", () => {
 
 numbers.forEach(number => {
     number.addEventListener("click", function(){
+        if(number.textContent == "."){
+            if (!clickedPoint) {  
+                clickedPoint = true;
+            }
+            else {
+                return
+            }
+        }
+        
+        console.log(number.textContent)
         num = "";
         num = screen.textContent += this.textContent;
+           
     });
 });
 
@@ -35,11 +46,12 @@ del.addEventListener("click", ()=>{num = num.substring(0, num.length - 1); scree
 
 operators.forEach(operator => {
     operator.addEventListener("click", function(){
+        clickedPoint = false
 
         //CHECKS IF THERE IS ALREADY ANY OPERATOR
         for(let i = 0; i < operators.length; i++){
             if(num.includes(operators[i].textContent)){
-                finalEqual()
+                finalEqual(num)
             }
         }
 
@@ -50,32 +62,17 @@ operators.forEach(operator => {
     });
 });
 
-function checkNum(numb){
-    numb = numb.toString();
-    firstChar = numb.indexOf(".");
-    lastChar = numb.lastIndexOf("."); 
-    console.log(firstChar, lastChar);
-    if(firstChar == -1){
-        return;
-    }
-    else if(firstChar != lastChar){
-        return Number(numb) = numb.slice(0,lastChar) + numb.slice(lastChar+1);
-    }
-    
-}
 
-// console.log(checkNum("123.12.12"))
-
-function finalEqual(num){
-    sumMade = num.split(separator)
+function finalEqual(nume){
+    sumMade = nume.split(separator)
     sumMade[0] = Number(sumMade[0]);
     sumMade[1] = Number(sumMade[1]);
     
     let finalResult = operate(sumMade[0], separator, sumMade[1]);
-    console.log(finalResult) 
     screen.textContent = finalResult;
     finalResult = num;
 }
+
 //DO THE MATH
 equals.addEventListener("click", ()=>{
     finalEqual(num)
