@@ -27,3 +27,8 @@ h1{
 #result{
     margin-top: 20px;
 }
+
+.highlighted{
+    background-color: #ffef3d;
+    padding: 3px;
+}

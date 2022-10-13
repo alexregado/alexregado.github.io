@@ -15,7 +15,7 @@ function compute() {
         principal.focus();
         principal = "";
     }
-        result.innerText = `If you deposit ${principal} , at an interest rate of ${rate} You will receive an amount of ${interest}, in the year ${year}.`;
+        result.innerHTML = `If you deposit <span class="highlighted">${principal}€</span>, at an interest rate of <span class="highlighted">${rate}%</span>. You will receive an amount of <span class="highlighted">${interest}€</span>, in the year <span class="highlighted">${year}</span>.`;
 }
 
 //update the value of the selected range
